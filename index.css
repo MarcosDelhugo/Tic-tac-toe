@@ -1,9 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,900;1,900&display=swap');
+html{
+    background-color: #03eba5;
+    font-family: "Raleway", sans-serif;
+}
 .cont{
-    height: 100vh;
-    margin: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: 6.4rem 6.4rem 6.4rem;
+    grid-template-rows: 6rem 6rem 6rem;
     justify-content: center;
-    align-items: center;
+    padding-bottom: .1rem;
+}
+.wrap{
+    display: grid;
+    grid-template-columns: 6rem 6rem 2rem;
+    grid-template-rows: 6rem;
+    justify-content: center;
+    margin: .1rem;
+    padding-bottom: .1rem;
+
+}
+.cont-count{
+    display: grid;
+    grid-template-columns: 10rem 10rem;
+    grid-template-rows: 2rem;
+    justify-content: center;
+}
+.count-x{
+    margin-left: 1rem;
+}
+.count-o{
+    margin-left: 2rem;
+
 }
 .board {
     display: flex;
@@ -13,14 +41,14 @@
 }
 
 .cell {
-    width: 100px;
-    height: 100px;
     border-radius: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: .2rem;
-    font-size: 2em;
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(110, 49, 7);
+}
+.cell:hover{
+    border-color: black;
     
 }
 
@@ -31,5 +59,20 @@
 
 h1{
     text-align: center;
+}
+
+.button-refresh{ 
+    background-color: transparent; /* Hace el fondo del botón transparente */
+    border: none; /* Elimina el borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.icon{
+  background-image: url('./assets/refresh.svg'); /* Ruta de tu imagen de logo */
+  background-size: cover; /* Ajusta el tamaño de la imagen */
+  width: 1.2rem; /* Ajusta el ancho del icono */
+  height: 1.2rem; /* Ajusta la altura del icono */
+  display: inline-block;
+  margin-bottom:  2rem; /* Ajusta el espacio entre el icono y el texto */
 }
 
